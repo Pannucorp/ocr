@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 // set some server variables
 const http = require('http');
 const app = express();
-const port = (process.env.npm_config_PORT || 3000);
+const port = (process.env.npm_config_PORT || 8080);
 
 // for parsing application/json
 app.use(bodyParser.json());
