@@ -43,10 +43,6 @@ MongoClient.connect(url, async function (err, db) {
 // const text = 'Google, headquartered in Mountain View (1600 Amphitheatre Pkwy, Mountain View, CA 940430), unveiled the new Android phone for $799 at the Consumer Electronic Show. Sundar Pichai said in his keynote that users love their new Android phones. He goes to Humboldt Park Health and then go to IBM. He was born 01/09/1997. And his ssn is 746-05-7416 and tax number is 12-3241544 and he back to home and get Paracetamol. He wore FILA sports T-shirt. and then he meet paracetamol. his phone number is 14159004073';
 
 async function doNLP(text) {
-    /**
-     * TODO(developer): Uncomment the following line to run this code.
-     */
-    
     // Prepares a document, representing the provided text
     const document = {
         content: text,
@@ -132,8 +128,8 @@ function setupServer() {
         console.log(labels[0]['description']);
         
         // console.log("##translate input data##", req.body); //text: body:'This is jason', targetLanguage: zh?
-        //Do NLP
         
+        //Do NLp
         const nlpResult = doNLP(labels[0]['description']);
 
         console.log(nlpResult);
@@ -188,7 +184,7 @@ function setupServer() {
         console.log(labels[0]['description']);
         
         // console.log("##translate input data##", req.body); //text: body:'This is jason', targetLanguage: zh?
-        //Do NLP
+        // Do NLP
         
         const nlpResult = doNLP(labels[0]['description']);
 
