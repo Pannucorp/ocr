@@ -1,11 +1,11 @@
-// Imports the Google Cloud client library
+//Test Imports the Google Cloud client library
 const vision = require('@google-cloud/vision');
 
 const client = new vision.ImageAnnotatorClient({
   keyFilename:"./APIKey.json"
 })
 
-async function setEndpoint() {
+async function setEndpoint() { 
   const [result] = await client.textDetection('./7.png');
   const labels = result.textAnnotations;
   console.log('Text:');

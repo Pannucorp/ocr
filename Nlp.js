@@ -7,7 +7,7 @@ const client = new language.LanguageServiceClient({
     keyFilename: "./APIKey.json"
 });
 
-async function setEndpoint() {
+async function setEndpoint() { //This is only for test.
     /**
      * TODO(developer): Uncomment the following line to run this code.
      */
